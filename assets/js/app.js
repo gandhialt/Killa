@@ -513,8 +513,8 @@ const App = {
     const el = document.getElementById('strapText');
     if (!el) return;
     // [word, italic-serif?]
-    const en = [['Torna', 1], ['is the', 0], ['first fort', 1], ['of', 0], ['Swarajya,', 1], ['rebuilt in', 0], ['clay', 1], ['every', 0], ['Diwali.', 1]];
-    const mr = [['तोरणा', 1], ['हा', 0], ['स्वराज्याचा', 1], ['पहिला', 0], ['गड,', 1], ['आम्ही', 0], ['दर', 0], ['दिवाळीत', 1], ['मातीतून', 1], ['पुन्हा', 0], ['उभा', 0], ['करतो.', 0]];
+    const en = [['Torna', 1], ['is the', 0], ['first fort', 1], ['of', 0], ['Swarajya,', 1], ['the first', 0], ['conquest', 1], ['of', 0], ['Shivaji Maharaj.', 1]];
+    const mr = [['तोरणा', 1], ['हा', 0], ['स्वराज्याचा', 1], ['पहिला', 0], ['गड,', 1], ['छत्रपती', 0], ['शिवरायांचा', 1], ['पहिला', 0], ['विजय.', 1]];
     // split multi-word entries so every word is its own inline-block (keeps real spaces between words)
     const words = (this.isMr ? mr : en).flatMap(([w, it]) => w.split(' ').map(x => [x, it]));
     const rnd = n => { const x = Math.sin(n * 9301 + 49297) * 233280; return x - Math.floor(x); };
@@ -845,8 +845,8 @@ const App = {
   // ================= FOOTER =================
   renderFooter() {
     const lines = this.isMr
-      ? ['तोरणा म्हणजे स्वराज्याचे पहिले तोरण.', 'तोरणा म्हणजे दगड आणि वाऱ्याचा गड.', 'आम्ही तो पुन्हा मातीतून उभा केला.', 'या, आमच्यासोबत गड उभारा.']
-      : ["Torna is Swarajya's first toran.", 'Torna is a fort of stone and wind.', 'We built it again, from clay.', 'Come build with us.'];
+      ? ['तोरणा म्हणजे स्वराज्याचे पहिले तोरण.', 'तोरणा म्हणजे दगड आणि वाऱ्याचा गड.', 'इ.स. १६४६ — स्वराज्याची मुहूर्तमेढ.', 'या, गड पाहा.']
+      : ["Torna is Swarajya's first toran.", 'Torna is a fort of stone and wind.', '1646 — where Swarajya began.', 'Come, see the fort.'];
     const m = document.getElementById('manifesto');
     if (m) m.innerHTML = lines.map(l => `<span>${this.esc(l)}</span>`).join('');
 
