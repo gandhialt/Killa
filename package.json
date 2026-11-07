@@ -1,0 +1,9 @@
+{
+  "name": "torna-fort-killa-site",
+  "version": "1.0.0",
+  "description": "Torna Fort Website",
+  "scripts": {
+    "start": "node Killa_Site/server.js"
+  }
+}
+

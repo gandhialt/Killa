@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>तोरणा (प्रचंडगड) | Torna Fort, Diwali Killa Project</title>
+  <meta name="description" content="तोरणा (प्रचंडगड) किल्ल्याचे नकाशे, दुर्ग रचना, ऐतिहासिक कथा आणि आमच्या दिवाळी किल्ला निर्मितीच्या आठवणी. Torna Fort maps, architecture, history and our Diwali fort-making memories.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 22'%3E%3Cpath d='M0 22A22 22 0 0 1 44 22A22 13 0 0 0 0 22Z'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=Noto+Sans+Devanagari:wght@300;400;500;600&family=Noto+Serif+Devanagari:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Shared geometric letterforms for the TORNA wordmark -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <g id="L-T"><path d="M0 0H95V34H64.5V216H30.5V34H0Z"/></g>
+      <g id="L-O"><path fill-rule="evenodd" d="M47.5 0C73.7 0 95 21.3 95 47.5V168.5C95 194.7 73.7 216 47.5 216S0 194.7 0 168.5V47.5C0 21.3 21.3 0 47.5 0ZM47.5 34C40 34 34 40 34 47.5V168.5C34 176 40 182 47.5 182S61 176 61 168.5V47.5C61 40 55 34 47.5 34Z"/></g>
+      <g id="L-R"><path fill-rule="evenodd" d="M0 0H56C79 0 95 15 95 38V74C95 97 79 112 56 112H34V216H0ZM34 32V80H54C58 80 61 77 61 73V39C61 35 58 32 54 32Z"/><path d="M44 106H82L95 216H57Z"/></g>
+      <g id="L-N"><path d="M0 0H34L61 125V0H95V216H61L34 91V216H0Z"/></g>
+      <g id="L-A"><path fill-rule="evenodd" d="M32 0H63L95 216H61L56.500 180H38.500L34 216H0ZM43.800 150H51.200L47.500 125Z"/></g>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main-content" data-mr="मुख्य मजकुराकडे जा" data-en="Skip to main content">मुख्य मजकुराकडे जा</a>
+
+  <!-- ================= FIXED NAVIGATION ================= -->
+  <header class="nav" id="nav">
+    <div class="nav__left">
+      <a href="#maps" class="nav-plus" data-nav="maps">
+        <svg class="plus" width="11" height="11" viewBox="0 0 22 22" aria-hidden="true"><path d="M11 0v22M22 11H0" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+        <span data-mr="नकाशे" data-en="Maps">नकाशे</span>
+      </a>
+    </div>
+
+    <a href="#top" class="nav__mark" id="navMark" aria-label="Torna, top of page">
+      <svg width="44" height="22" viewBox="0 0 44 22" aria-hidden="true"><path d="M0 22A22 22 0 0 1 44 22A22 13 0 0 0 0 22Z" fill="currentColor"/></svg>
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#architecture" class="u-link" data-mr="दुर्ग" data-en="Fort">दुर्ग</a>
+      <a href="#stories" class="u-link" data-mr="कथा" data-en="Stories">कथा</a>
+      <a href="#memories" class="u-link" data-mr="आठवणी" data-en="Memories">आठवणी</a>
+      <button type="button" class="u-link js-lang" aria-label="Switch language"><span class="js-lang-label">EN</span></button>
+      <button type="button" class="u-link js-tutari" aria-label="Play tutari"><span data-mr="तुतारी" data-en="Tutari">तुतारी</span></button>
+    </nav>
+
+    <button type="button" class="burger" id="burger" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+      <svg width="44" height="39" viewBox="0 0 44 39" aria-hidden="true">
+        <rect class="burger__l1" x="6" y="12" width="32" height="2" fill="currentColor"/>
+        <rect class="burger__l2" x="6" y="24" width="32" height="2" fill="currentColor"/>
+      </svg>
+    </button>
+
+    <div class="nav__right">
+      <a href="#memories" class="nav-plus nav-plus--right" data-nav="memories">
+        <span data-mr="आठवणी" data-en="Memories">आठवणी</span>
+        <svg class="plus" width="11" height="11" viewBox="0 0 22 22" aria-hidden="true"><path d="M11 0v22M22 11H0" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- Mobile overlay menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav aria-label="Mobile">
+      <a href="#top" data-mr="मुख्यपृष्ठ" data-en="Home">मुख्यपृष्ठ</a>
+      <a href="#maps" data-mr="नकाशे" data-en="Maps">नकाशे</a>
+      <a href="#architecture" data-mr="दुर्ग रचना" data-en="Fort">दुर्ग रचना</a>
+      <a href="#stories" data-mr="कथा" data-en="Stories">कथा</a>
+      <a href="#memories" data-mr="आठवणी" data-en="Memories">आठवणी</a>
+    </nav>
+    <div class="mobile-menu__tools">
+      <button type="button" class="js-lang"><span class="js-lang-label">EN</span></button>
+      <button type="button" class="js-tutari"><span data-mr="तुतारी" data-en="Tutari">तुतारी</span></button>
+    </div>
+  </div>
+
+  <!-- Cursor-following hover reveal -->
+  <div class="hover-reveal" id="hoverReveal" aria-hidden="true"><img alt="" id="hoverRevealImg"></div>
+
+  <main id="main-content" class="page">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="top">
+      <h1 class="sr-only">Torna (Prachandagad) · Diwali killa project</h1>
+      <div class="hero__mark">
+        <svg class="wordmark" viewBox="0 0 543 216" role="img" aria-label="TORNA" fill="currentColor">
+          <use href="#L-T" x="0"/><use href="#L-O" x="112"/><use href="#L-R" x="224"/><use href="#L-N" x="336"/><use href="#L-A" x="448"/>
+        </svg>
+      </div>
+      <div class="hero__row">
+        <p class="hero__tagline" id="heroTagline" data-mr="स्वराज्याचे पहिले तोरण. दर दिवाळीत मातीतून पुन्हा उभे." data-en="The first fort of Swarajya. Rebuilt in clay, every Diwali.">स्वराज्याचे पहिले तोरण. दर दिवाळीत मातीतून पुन्हा उभे.</p>
+        <ul class="hero__meta" id="heroMeta"></ul>
+      </div>
+      <div class="stats" id="heroStatsContainer"></div>
+    </section>
+
+    <!-- ================= PARALLAX PHASE GALLERY ================= -->
+    <section class="roster" id="roster" aria-label="Phases of the fort build">
+      <div class="roster__grid" id="rosterGrid"></div>
+    </section>
+
+    <!-- ================= EDITORIAL STRAPLINE ================= -->
+    <section class="strap" aria-label="About">
+      <p class="strap__text" id="strapText"></p>
+    </section>
+
+    <!-- ================= MAPS ================= -->
+    <section class="section" id="maps">
+      <header class="sec-head">
+        <h2 data-mr="नकाशे" data-en="Maps">नकाशे</h2>
+        <p class="sec-desc" data-mr="दिवाळीत तोरणा बनवण्यासाठी वापरलेले ऐतिहासिक रेखाचित्र, दिशा दर्शक नकाशा आणि ट्रेकशितीज सर्वेक्षण नकाशा." data-en="The historical sketch, the contour and direction map, and the Trekshitiz survey we used to build our Torna.">दिवाळीत तोरणा बनवण्यासाठी वापरलेले ऐतिहासिक रेखाचित्र, दिशा दर्शक नकाशा आणि ट्रेकशितीज सर्वेक्षण नकाशा.</p>
+      </header>
+
+      <div class="tabs" role="tablist">
+        <button class="tab active" role="tab" data-maptab="sketch" data-mr="रेखाचित्र" data-en="Sketch">रेखाचित्र</button>
+        <button class="tab" role="tab" data-maptab="contour" data-mr="दिशा व परिसर" data-en="Contour">दिशा व परिसर</button>
+        <button class="tab" role="tab" data-maptab="trekshitiz" data-mr="ट्रेकशितीज (PDF)" data-en="Trekshitiz (PDF)">ट्रेकशितीज (PDF)</button>
+        <button class="tab" role="tab" data-maptab="schematic" data-mr="ब्लूप्रिंट" data-en="Blueprint">ब्लूप्रिंट</button>
+      </div>
+
+      <div class="map-card">
+        <div class="map-toolbar">
+          <div class="map-title">
+            <span class="map-badge" id="mapBadgeText">नकाशा १</span>
+            <span id="mapTitleText">तोरणा गड ऐतिहासिक तपशीलवार रेखाचित्र</span>
+          </div>
+          <div class="map-controls">
+            <button class="map-btn" id="mapZoomIn" type="button" aria-label="Zoom in">+</button>
+            <button class="map-btn" id="mapZoomOut" type="button" aria-label="Zoom out">&minus;</button>
+            <button class="map-btn" id="mapZoomReset" type="button" aria-label="Reset zoom">&#8634;</button>
+            <a class="map-btn" id="mapDownloadBtn" href="assets/maps/torna_sketch_map.jpg" target="_blank" rel="noopener" aria-label="Open full size">&#8599;</a>
+          </div>
+        </div>
+
+        <div class="map-viewport" id="mapViewport">
+          <img src="assets/maps/torna_sketch_map.jpg" alt="Torna Fort map" id="mapMainImage" class="map-image" draggable="false">
+          <iframe id="mapPdfFrame" class="map-pdf" style="display:none" title="Torna Fort Trekshitiz PDF"></iframe>
+
+          <div id="schematicContainer" class="schematic" style="display:none">
+            <svg viewBox="0 0 1000 450" class="schematic__svg" id="tornaSvgMap" role="img" aria-label="Interactive blueprint of Torna fort">
+              <path class="fort-outline" d="M 60 260 C 100 230, 160 210, 240 230 C 300 240, 360 220, 420 200 C 480 160, 560 150, 640 180 C 720 200, 800 210, 890 220 C 940 230, 960 240, 950 250 C 920 260, 820 265, 740 270 C 650 280, 580 300, 500 290 C 420 285, 340 310, 260 295 C 180 280, 120 300, 70 280 Z"/>
+
+              <text class="zone" x="820" y="170" data-mr="झुंजार माची (पूर्व)" data-en="Zunjar Machi (East)">झुंजार माची (पूर्व)</text>
+              <text class="zone" x="500" y="125" text-anchor="middle" data-mr="बालेकिल्ला (सदर व मंदिरे)" data-en="Balekilla (Citadel & Temples)">बालेकिल्ला (सदर व मंदिरे)</text>
+              <text class="zone" x="160" y="170" data-mr="बुधला माची (पश्चिम)" data-en="Budhla Machi (West)">बुधला माची (पश्चिम)</text>
+
+              <g class="hotspot-pin pin-gate" data-pin="bini_darwaja" transform="translate(620 180)" tabindex="0" role="button"><circle r="9"/><text y="-14" data-mr="बिनी दरवाजा" data-en="Bini Gate">बिनी दरवाजा</text></g>
+              <g class="hotspot-pin pin-gate" data-pin="kothi_darwaja" transform="translate(580 195)" tabindex="0" role="button"><circle r="8"/><text y="-12" data-mr="कोठी दरवाजा" data-en="Kothi Gate">कोठी दरवाजा</text></g>
+              <g class="hotspot-pin pin-temple" data-pin="mengai" transform="translate(530 220)" tabindex="0" role="button"><circle r="11"/><text y="-14" data-mr="मेंगाई मंदिर" data-en="Mengai Temple">मेंगाई मंदिर</text></g>
+              <g class="hotspot-pin pin-tank" data-pin="mengai_tale" transform="translate(565 245)" tabindex="0" role="button"><circle r="9"/><text y="22" data-mr="मेंगाईचे तळे" data-en="Mengai Lake">मेंगाईचे तळे</text></g>
+              <g class="hotspot-pin pin-temple" data-pin="toraneshwar" transform="translate(480 215)" tabindex="0" role="button"><circle r="9"/><text y="-12" data-mr="तोरणेश्वर" data-en="Toraneshwar">तोरणेश्वर</text></g>
+              <g class="hotspot-pin pin-buruj" data-pin="bhel_buruj" transform="translate(930 235)" tabindex="0" role="button"><circle r="9"/><text y="-12" data-mr="भेल बुरुज" data-en="Bhel Bastion">भेल बुरुज</text></g>
+              <g class="hotspot-pin pin-gate" data-pin="konkan_darwaja" transform="translate(490 175)" tabindex="0" role="button"><circle r="8"/><text y="-12" data-mr="कोकण दरवाजा" data-en="Konkan Gate">कोकण दरवाजा</text></g>
+              <g class="hotspot-pin pin-tank" data-pin="kapur_taki" transform="translate(290 240)" tabindex="0" role="button"><circle r="8"/><text y="-12" data-mr="कापूर टाके" data-en="Kapur Tank">कापूर टाके</text></g>
+              <g class="hotspot-pin pin-gate" data-pin="chitta_darwaja" transform="translate(340 230)" tabindex="0" role="button"><circle r="8"/><text y="20" data-mr="चित्ता दरवाजा" data-en="Chitta Gate">चित्ता दरवाजा</text></g>
+              <g class="hotspot-pin pin-buruj" data-pin="chilakhati" transform="translate(85 270)" tabindex="0" role="button"><circle r="11"/><text y="-14" data-mr="चिलखती बुरुज" data-en="Chilakhati Bastion">चिलखती बुरुज</text></g>
+              <g class="hotspot-pin pin-buruj" data-pin="hanuman_buruj" transform="translate(660 205)" tabindex="0" role="button"><circle r="8"/><text y="20" data-mr="हनुमान बुरुज" data-en="Hanuman Bastion">हनुमान बुरुज</text></g>
+
+              <g class="compass" transform="translate(50 60)">
+                <circle r="24"/>
+                <line x1="0" y1="-18" x2="0" y2="18"/>
+                <polygon points="0,-22 -5,-14 5,-14"/>
+                <text y="-30" text-anchor="middle" data-mr="उत्तर" data-en="North">उत्तर</text>
+                <text y="40" text-anchor="middle" class="compass__sub" data-mr="लोहगड" data-en="Lohagad">लोहगड</text>
+              </g>
+            </svg>
+            <div class="hotspot-panel" id="hotspotDetailsPanel"></div>
+          </div>
+        </div>
+
+        <ul class="legend">
+          <li><span class="dot dot--gate"></span><div><strong data-mr="दरवाजे" data-en="Gateways">दरवाजे</strong><small data-mr="बिनी, कोठी, कोकण, चित्ता, भगत, थिनला" data-en="Bini, Kothi, Konkan, Chitta, Bhagat, Thinla">बिनी, कोठी, कोकण, चित्ता, भगत, थिनला</small></div></li>
+          <li><span class="dot dot--temple"></span><div><strong data-mr="मंदिरे व वास्तू" data-en="Temples & landmarks">मंदिरे व वास्तू</strong><small data-mr="मेंगाई देवी, तोरणेश्वर, गंगाजाई, सदर" data-en="Mengai Devi, Toraneshwar, Gangajai, Sadar">मेंगाई देवी, तोरणेश्वर, गंगाजाई, सदर</small></div></li>
+          <li><span class="dot dot--tank"></span><div><strong data-mr="पाण्याची टाकी" data-en="Water tanks">पाण्याची टाकी</strong><small data-mr="मेंगाई तळे, कापूर टाके, तीन टाकी, शेषगंगा" data-en="Mengai Lake, Kapur Tank, Teen Taki, Sheshganga">मेंगाई तळे, कापूर टाके, तीन टाकी, शेषगंगा</small></div></li>
+          <li><span class="dot dot--buruj"></span><div><strong data-mr="बुरुज व चिलखती तट" data-en="Bastions & ramparts">बुरुज व चिलखती तट</strong><small data-mr="चिलखती, हनुमान, भेल, टकमक" data-en="Chilakhati, Hanuman, Bhel, Takmak">चिलखती, हनुमान, भेल, टकमक</small></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= FORT DIRECTORY ================= -->
+    <section class="section" id="architecture">
+      <header class="sec-head">
+        <h2 data-mr="दुर्ग" data-en="Fort">दुर्ग</h2>
+        <p class="sec-desc" data-mr="तोरणा गडावरील माच्या, मंदिरे, बुरुज, दरवाजे आणि पाण्याची टाकी, एकाच यादीत." data-en="Every machi, temple, bastion, gate and water tank on Torna, in one list.">तोरणा गडावरील माच्या, मंदिरे, बुरुज, दरवाजे आणि पाण्याची टाकी, एकाच यादीत.</p>
+      </header>
+
+      <div class="tabs" role="tablist">
+        <button class="tab active" role="tab" data-archtab="all" data-mr="सर्व" data-en="All">सर्व</button>
+        <button class="tab" role="tab" data-archtab="machis" data-mr="माच्या" data-en="Machis">माच्या</button>
+        <button class="tab" role="tab" data-archtab="temples" data-mr="मंदिरे" data-en="Temples">मंदिरे</button>
+        <button class="tab" role="tab" data-archtab="buruj" data-mr="बुरुज" data-en="Bastions">बुरुज</button>
+        <button class="tab" role="tab" data-archtab="gates" data-mr="दरवाजे" data-en="Gates">दरवाजे</button>
+        <button class="tab" role="tab" data-archtab="tanks" data-mr="टाकी" data-en="Water tanks">टाकी</button>
+      </div>
+
+      <div class="dir" id="archCardsContainer"></div>
+    </section>
+
+    <!-- ================= STORIES ================= -->
+    <section class="section" id="stories">
+      <header class="sec-head">
+        <h2 data-mr="कथा" data-en="Stories">कथा</h2>
+        <p class="sec-desc" data-mr="१६४६ मध्ये सोळा वर्षांच्या शिवरायांनी तोरणा जिंकला. तोरण्यावरील खजिन्यातून राजगड उभा राहिला. त्या प्रसंगांची गोष्ट." data-en="From the bloodless conquest of 1646 to the pots of gold that raised Rajgad, the moments that made Torna.">१६४६ मध्ये सोळा वर्षांच्या शिवरायांनी तोरणा जिंकला. तोरण्यावरील खजिन्यातून राजगड उभा राहिला. त्या प्रसंगांची गोष्ट.</p>
+      </header>
+      <div class="stories" id="storiesContainer"></div>
+    </section>
+
+    <!-- ================= MEMORIES (NEWS GRID) ================= -->
+    <section class="section" id="memories">
+      <header class="sec-head">
+        <h2 data-mr="आठवणी" data-en="Memories">आठवणी</h2>
+        <p class="sec-desc" data-mr="या दिवाळीत तोरणा बनवताना: नकाशे अभ्यासण्यापासून चिखलातले हात, रात्रीचा चहा आणि शेवटची आरती." data-en="Building Torna this Diwali: from studying the maps to muddy hands, midnight chai and the final aarti.">या दिवाळीत तोरणा बनवताना: नकाशे अभ्यासण्यापासून चिखलातले हात, रात्रीचा चहा आणि शेवटची आरती.</p>
+      </header>
+
+      <div class="mem-toolbar">
+        <div class="tabs tabs--flush" role="tablist">
+          <button class="tab gallery-filter-btn active" role="tab" data-filter="all" data-mr="सर्व" data-en="All">सर्व</button>
+          <button class="tab gallery-filter-btn" role="tab" data-filter="planning" data-mr="प्लॅनिंग" data-en="Planning">प्लॅनिंग</button>
+          <button class="tab gallery-filter-btn" role="tab" data-filter="mudwork" data-mr="मातीकाम" data-en="Mud work">मातीकाम</button>
+          <button class="tab gallery-filter-btn" role="tab" data-filter="sculpting" data-mr="साकारताना" data-en="Shaping">साकारताना</button>
+          <button class="tab gallery-filter-btn" role="tab" data-filter="lighting" data-mr="रोषणाई" data-en="Lights">रोषणाई</button>
+          <button class="tab gallery-filter-btn" role="tab" data-filter="squad" data-mr="आमची गँग" data-en="Squad">आमची गँग</button>
+        </div>
+        <button type="button" class="u-link" id="openUploadModal">
+          <span data-mr="आठवण जोडा +" data-en="Add memory +">आठवण जोडा +</span>
+        </button>
+      </div>
+
+      <div class="masonry" id="galleryGrid"></div>
+
+      <div class="center">
+        <button type="button" class="btn" id="allMemoriesBtn"><span data-mr="सर्व आठवणी" data-en="All memories">सर्व आठवणी</span></button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= STICKY REVEAL FOOTER ================= -->
+  <footer class="footer" id="footer">
+    <div class="footer__top">
+      <p class="manifesto" id="manifesto"></p>
+
+      <div class="directory">
+        <div>
+          <h3 data-mr="टप्पे" data-en="Phases">टप्पे</h3>
+          <ul id="footPhases"></ul>
+        </div>
+        <div>
+          <h3 data-mr="पाहा" data-en="Explore">पाहा</h3>
+          <ul>
+            <li><a class="u-link" href="#maps" data-reveal="assets/maps/torna_sketch_map.jpg" data-mr="नकाशे" data-en="Maps">नकाशे</a></li>
+            <li><a class="u-link" href="#architecture" data-reveal="images_to_be_added/WhatsApp Image 2026-11-07 at 4.48.32 PM.jpeg" data-mr="दुर्ग" data-en="Fort">दुर्ग</a></li>
+            <li><a class="u-link" href="#stories" data-reveal="assets/maps/torna_contour_map.jpg" data-mr="कथा" data-en="Stories">कथा</a></li>
+            <li><a class="u-link" href="#memories" data-reveal="images_to_be_added/WhatsApp Image 2026-11-07 at 4.48.38 PM.jpeg" data-mr="आठवणी" data-en="Memories">आठवणी</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 data-mr="नकाशा फाइल्स" data-en="Map files">नकाशा फाइल्स</h3>
+          <ul>
+            <li><a class="u-link" href="assets/maps/torna_sketch_map.jpg" target="_blank" rel="noopener" data-reveal="assets/maps/torna_sketch_map.jpg" data-mr="रेखाचित्र (JPG)" data-en="Sketch (JPG)">रेखाचित्र (JPG)</a></li>
+            <li><a class="u-link" href="assets/maps/torna_contour_map.jpg" target="_blank" rel="noopener" data-reveal="assets/maps/torna_contour_map.jpg" data-mr="कंटूर नकाशा (JPG)" data-en="Contour (JPG)">कंटूर नकाशा (JPG)</a></li>
+            <li><a class="u-link" href="assets/maps/torna_trekshitiz_map.pdf" target="_blank" rel="noopener" data-reveal="assets/maps/torna_sketch_map.jpg" data-mr="ट्रेकशितीज (PDF)" data-en="Trekshitiz (PDF)">ट्रेकशितीज (PDF)</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <svg class="wordmark wordmark--wide" viewBox="0 0 1200 216" role="img" aria-label="TORNA" fill="currentColor">
+        <use href="#L-T" transform="translate(0 0) scale(1.4 1)"/>
+        <use href="#L-O" transform="translate(266.75 0) scale(1.4 1)"/>
+        <use href="#L-R" transform="translate(533.5 0) scale(1.4 1)"/>
+        <use href="#L-N" transform="translate(800.25 0) scale(1.4 1)"/>
+        <use href="#L-A" transform="translate(1067 0) scale(1.4 1)"/>
+      </svg>
+      <p class="copyright" data-mr="© २०२६ तोरणा दिवाळी किल्ला प्रकल्प. सर्व हक्क राखीव." data-en="© 2026 Torna Diwali Killa Project. All rights reserved.">© २०२६ तोरणा दिवाळी किल्ला प्रकल्प. सर्व हक्क राखीव.</p>
+    </div>
+  </footer>
+
+  <!-- ================= UPLOAD MODAL ================= -->
+  <div class="modal" id="uploadModal" role="dialog" aria-modal="true" aria-labelledby="uploadTitle">
+    <div class="modal__panel">
+      <div class="modal__head">
+        <h3 id="uploadTitle" data-mr="आठवण जोडा" data-en="Add a memory">आठवण जोडा</h3>
+        <button type="button" class="modal__close" id="closeUploadModal" aria-label="Close">&times;</button>
+      </div>
+
+      <form id="galleryUploadForm">
+        <label class="field">
+          <span data-mr="टप्पा" data-en="Phase">टप्पा</span>
+          <select name="photoStage" id="photoStage" required>
+            <option value="planning" data-mr="प्लॅनिंग व गप्पा" data-en="Planning & Banter">प्लॅनिंग व गप्पा</option>
+            <option value="mudwork" data-mr="मातीकाम व धमाल" data-en="Mud Work & Fun">मातीकाम व धमाल</option>
+            <option value="sculpting" data-mr="किल्ला साकारताना" data-en="Shaping the Fort">किल्ला साकारताना</option>
+            <option value="lighting" data-mr="रोषणाई व दिवा" data-en="Diyas & Flags">रोषणाई व दिवा</option>
+            <option value="squad" data-mr="आमची गँग" data-en="The Squad">आमची गँग</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span data-mr="शीर्षक" data-en="Title">शीर्षक</span>
+          <input type="text" name="photoTitle" required placeholder="उदा. चिखलातले हात आणि हास्यविनोद" data-mr-ph="उदा. चिखलातले हात आणि हास्यविनोद" data-en-ph="e.g. Mud on our hands and laughter">
+        </label>
+
+        <div class="field">
+          <span data-mr="फोटो" data-en="Photo">फोटो</span>
+          <div class="dropzone" id="photoDropzone" tabindex="0" role="button">
+            <p data-mr="फोटो येथे ड्रॅग करा किंवा क्लिक करून निवडा" data-en="Drag a photo here or click to browse">फोटो येथे ड्रॅग करा किंवा क्लिक करून निवडा</p>
+            <input type="file" id="photoFileInput" accept="image/*" hidden>
+            <img id="uploadPreviewImg" class="preview" alt="Preview">
+          </div>
+        </div>
+
+        <label class="field">
+          <span data-mr="किंवा इमेज URL" data-en="Or image URL">किंवा इमेज URL</span>
+          <input type="url" name="photoUrl" placeholder="https://example.com/photo.jpg">
+        </label>
+
+        <label class="field">
+          <span data-mr="वर्णन" data-en="Notes">वर्णन</span>
+          <textarea name="photoDesc" rows="3" placeholder="या क्षणाची आठवण..." data-mr-ph="या क्षणाची आठवण..." data-en-ph="What made this moment special..."></textarea>
+        </label>
+
+        <button type="submit" class="btn btn--solid"><span data-mr="जतन करा" data-en="Save memory">जतन करा</span></button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ================= LIGHTBOX ================= -->
+  <div class="modal modal--lightbox" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button type="button" class="modal__close modal__close--float" id="closeLightbox" aria-label="Close">&times;</button>
+    <div class="lightbox">
+      <button type="button" class="lightbox__nav" id="prevLightbox" aria-label="Previous">&larr;</button>
+      <figure class="lightbox__fig">
+        <div class="lightbox__media">
+          <img src="" alt="" id="lightboxImg">
+          <video id="lightboxVideo" muted loop playsinline controls hidden></video>
+        </div>
+        <figcaption>
+          <h4 id="lightboxTitle"></h4>
+          <p id="lightboxDesc"></p>
+        </figcaption>
+      </figure>
+      <button type="button" class="lightbox__nav" id="nextLightbox" aria-label="Next">&rarr;</button>
+    </div>
+  </div>
+
+  <script src="assets/vendor/lenis.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/audio.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

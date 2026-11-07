@@ -1,0 +1,11 @@
+# Archives
+*.zip
+
+# Dependencies
+node_modules/
+.npm/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
