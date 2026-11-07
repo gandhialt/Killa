@@ -1,9 +1,19 @@
 {
   "name": "torna-fort-killa-site",
   "version": "1.0.0",
-  "description": "Torna Fort Website",
+  "description": "Torna Fort (Prachandagad) Website & Diwali Killa Making Project Showcase",
+  "main": "server.js",
   "scripts": {
-    "start": "node Killa_Site/server.js"
-  }
+    "start": "node server.js",
+    "build": "echo 'Static build ready'"
+  },
+  "keywords": [
+    "torna",
+    "prachandagad",
+    "shivaji-maharaj",
+    "diwali-killa",
+    "maharashtra-forts"
+  ],
+  "author": "Diwali Killa Team",
+  "license": "ISC"
 }
-
