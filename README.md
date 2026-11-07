@@ -1,3 +1,30 @@
+# Live site
+
+**https://torna29.vercel.app** — public, no login needed. Scannable QR codes
+for print are in the repo root: `qr-torna29.svg` (vector, use this for print)
+and `qr-torna29.png`. Both are error-correction level H, so they still scan
+with roughly 30% of the code covered or damaged.
+
+## Deploying
+
+Hosted on Vercel (project `killa`, scope `gnadh`). The deploy source is the
+fork `gandhialt/Killa`, connected for automatic deploys:
+
+* `git push origin main` — pushes to the fork and auto-deploys to the live URL.
+* `git push upstream main` — pushes to `ritesh-killa/Killa`, the original repo.
+  This does **not** deploy on its own.
+
+To deploy without pushing, run `npx vercel --prod --yes` from the repo root.
+
+Note: because the fork is the deploy source, commits pushed only to
+`ritesh-killa/Killa` will not appear on the live site until the fork is synced.
+
+`vercel.json` pins the project to a static deploy (no build or install step,
+repo root as the output directory) so Vercel's zero-config detection does not
+pick up the `build` script in `package.json`.
+
+---
+
 # UI update: editorial redesign
 
 The site now uses a high-fashion editorial layout (monochrome, grotesque sans plus italic serif, pastel media tints). All the original content and features are kept: bilingual Marathi/English toggle, three maps plus the interactive blueprint, the fort inventory, the stories, the photo gallery with upload and lightbox, and the tutari button.
