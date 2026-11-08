@@ -17,7 +17,7 @@
       ]
     },
     {
-      "source": "/assets/(maps|video)/(.*)",
+      "source": "/assets/(.*)\\.(jpg|jpeg|png|webp|gif|svg|avif|mp4|webm|pdf|woff2)",
       "headers": [
         {
           "key": "Cache-Control",
