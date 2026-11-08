@@ -517,11 +517,9 @@ const App = {
     const mr = [['तोरणा', 1], ['हा', 0], ['स्वराज्याचा', 1], ['पहिला', 0], ['गड,', 1], ['छत्रपती', 0], ['शिवरायांचा', 1], ['पहिला', 0], ['विजय.', 1]];
     // split multi-word entries so every word is its own inline-block (keeps real spaces between words)
     const words = (this.isMr ? mr : en).flatMap(([w, it]) => w.split(' ').map(x => [x, it]));
-    const rnd = n => { const x = Math.sin(n * 9301 + 49297) * 233280; return x - Math.floor(x); };
-    // Narrow screens: a +/-18deg swing pushed the outer words past both
-    // viewport edges, so the tilt is scaled down on phones.
-    const amp = window.innerWidth < 768 ? 12 : 37;
-    const rot = n => (rnd(n) * amp - amp / 2).toFixed(1) + 'deg';
+    // No tilt. The random per-word rotation made Devanagari hard to read
+    // and pushed the outer words off both edges on a phone.
+    const rot = () => '0deg';
     let n = 0;
 
     el.innerHTML = words.map(([w, it]) => {

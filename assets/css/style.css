@@ -570,10 +570,14 @@ html[lang="mr"] .modal__head h3 { font-style: normal; font-size: 26px; }
   opacity: 0.92;
 }
 
-@media (max-width: 767px) {
-  /* ---- Nav: the rotated vertical labels clipped into the hero ---- */
+/* Nav: the rotated vertical labels clipped into the hero. Hide them at the
+   same breakpoint where the burger takes over, not 224px lower. */
+@media (max-width: 991px) {
   .nav__left, .nav__right { display: none; }
   .burger { margin-left: auto; }
+}
+
+@media (max-width: 767px) {
 
   /* ---- Tap targets: 44px minimum ---- */
   .mobile-menu__tools button,
