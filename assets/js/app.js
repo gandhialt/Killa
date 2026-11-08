@@ -518,7 +518,10 @@ const App = {
     // split multi-word entries so every word is its own inline-block (keeps real spaces between words)
     const words = (this.isMr ? mr : en).flatMap(([w, it]) => w.split(' ').map(x => [x, it]));
     const rnd = n => { const x = Math.sin(n * 9301 + 49297) * 233280; return x - Math.floor(x); };
-    const rot = n => (rnd(n) * 37 - 18).toFixed(1) + 'deg'; // -18deg .. +19deg
+    // Narrow screens: a +/-18deg swing pushed the outer words past both
+    // viewport edges, so the tilt is scaled down on phones.
+    const amp = window.innerWidth < 768 ? 12 : 37;
+    const rot = n => (rnd(n) * amp - amp / 2).toFixed(1) + 'deg';
     let n = 0;
 
     el.innerHTML = words.map(([w, it]) => {
